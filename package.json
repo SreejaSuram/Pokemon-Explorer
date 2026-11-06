@@ -1,12 +1,15 @@
 {
   "name": "pokemon-explorer",
+  "homepage": "https://sreejasuram.github.io/Pokemon-Explorer",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "lucide-react": "^0.300.0",
@@ -18,6 +21,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "browserslist": "^4.29.3",
     "caniuse-lite": "^1.0.30001814",
+    "gh-pages": "^6.3.0",
     "vite": "^5.0.8"
   }
 }
