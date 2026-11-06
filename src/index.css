@@ -51,6 +51,7 @@ body {
     color: var(--text-primary);
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 a {
@@ -157,6 +158,12 @@ button {
     }
 }
 
+@media (min-width: 1280px) {
+    .pokemon-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
 .pokemon-card {
     min-height: 280px;
     background-color: var(--card-bg);
@@ -191,7 +198,7 @@ button {
 .pokemon-image-container {
     width: 100%;
     aspect-ratio: 1 / 1;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +228,7 @@ button {
 }
 
 .pokemon-card-info {
-    padding: 1.5rem 1rem;
+    padding: 1rem;
     background-color: var(--bg-color);
     border-top: 1px solid var(--border-color);
 }
